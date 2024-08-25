@@ -1,5 +1,5 @@
 Figma: [Maket](https://www.figma.com/design/Dg0pOf4hgnnTXUrjygDbPi/Portfolio-Template-%E2%80%94-Webflow-Landing-Page-Design-(Community)?node-id=1-1263&t=BI4nCAnLjIyGwKOI-0)\
-Netlify: [View]()
+Netlify: [View](https://stephanie-holmes-webflow-bb.netlify.app/)
 
 Qo'shimcha foydalanildi: TinyPNG, SVGOMG, Transfonter;
 
