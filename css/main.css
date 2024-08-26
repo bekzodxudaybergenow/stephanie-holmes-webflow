@@ -470,3 +470,40 @@ h1, h2, h3 {
   background: linear-gradient(to left, #B923FF, #8338EC);
   border-radius: 4px;
 }
+
+.hero {
+  padding: 60px 0 40px;
+}
+
+.hero-content {
+  margin-bottom: 120px;
+}
+
+.hero-content__title {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--light-color);
+  margin-bottom: 10px;
+}
+.hero-content__title span {
+  font-weight: 600;
+  font-family: var(--george-font);
+  background: linear-gradient(to left, #B923FF, #8338EC);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.hero-content__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--light-color);
+}
+
+.hero__link {
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--light-color);
+}
