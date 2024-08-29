@@ -405,6 +405,18 @@ h1, h2, h3 {
   margin: 0;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.sidebar-show {
+  transform: translateX(100%);
+}
+
 .header {
   background-color: var(--bg-color);
   margin: 10px;
