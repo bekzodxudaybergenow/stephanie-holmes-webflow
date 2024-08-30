@@ -446,8 +446,31 @@ h1, h2, h3 {
   display: block;
 }
 
-.header-nav__list {
-  display: none;
+.header-nav__list.mobile {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  transform: translateX(-200px);
+  z-index: 100;
+  transition: all 0.8s ease;
+}
+
+.header-nav__item--link {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--light-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header-nav__item--link + * {
+  margin-top: 10px;
+}
+.header-nav__item--link img {
+  width: 11px;
+  height: 11px;
 }
 
 .header-nav__btn {
