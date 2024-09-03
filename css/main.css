@@ -447,8 +447,8 @@ h1, h2, h3 {
 }
 
 .header-nav__list.mobile {
-  position: absolute;
-  top: 110px;
+  position: fixed;
+  top: 120px;
   left: 40px;
   transform: translateX(-200px);
   z-index: 100;
@@ -456,7 +456,7 @@ h1, h2, h3 {
 }
 
 .header-nav__item + * {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .header-nav__item--link {
