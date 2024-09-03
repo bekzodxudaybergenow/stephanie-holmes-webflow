@@ -6,7 +6,13 @@
 
 // Header Nav
 .header-nav {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 10px;
     padding: 20px 0;
+    background-color: var(--bg-color);  
 }
 .header-nav__row {
     display: flex;
@@ -26,7 +32,7 @@
         display: block;
     }
 }
-.header-nav__list.mobile {
+.sidebar-list {
     position: fixed;
     top: 120px;
     left: 40px;
@@ -34,12 +40,12 @@
     z-index: 100;
     transition: all .8s ease;
 }
-.header-nav__item {
+.sidebar-list__item {
     & + * {
         margin-top: 20px;
     }
 }
-.header-nav__item--link {
+.sidebar-list__item--link {
     display: flex;
     align-items: center;
     column-gap: 4px;
@@ -141,7 +147,7 @@
 }
 // Header Hero
 .hero {
-    padding: 60px 0 40px;
+    padding: 120px 0 40px;
 }
 .hero-content {
     margin-bottom: 120px;
