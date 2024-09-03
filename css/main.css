@@ -448,11 +448,15 @@ h1, h2, h3 {
 
 .header-nav__list.mobile {
   position: absolute;
-  top: 80px;
+  top: 110px;
   left: 40px;
   transform: translateX(-200px);
   z-index: 100;
   transition: all 0.8s ease;
+}
+
+.header-nav__item + * {
+  margin-top: 10px;
 }
 
 .header-nav__item--link {
