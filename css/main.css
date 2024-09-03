@@ -506,6 +506,29 @@ h1, h2, h3 {
   border-radius: 4px;
 }
 
+.sidebar-closebtn {
+  position: fixed;
+  top: 40px;
+  left: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  transform: translateX(-250px);
+  z-index: 101;
+  background: linear-gradient(#1E0044, #1E0044) padding-box, linear-gradient(to left, #B923FF, #8338EC) border-box;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: 0 0 10px 5px rgba(131, 56, 236, 0.2);
+  transition: all 0.8s ease;
+}
+.sidebar-closebtn img {
+  width: 16px;
+  height: 16px;
+  rotate: 225deg;
+}
+
 .sidebar-inner {
   position: fixed;
   top: 10px;
