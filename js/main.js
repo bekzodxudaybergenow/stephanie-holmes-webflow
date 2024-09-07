@@ -5,6 +5,7 @@ let sidebarShade = document.querySelector('.sidebar-shade');
 let sidebarList = document.querySelector('.sidebar-list');
 let sidebarClosebtn = document.querySelector('.sidebar-closebtn');
 let headerNav = document.querySelector('.header-nav');
+let goTop = document.querySelector('.go-top');
 
 
 
@@ -36,13 +37,16 @@ window.addEventListener('scroll', () => {
 
     if (prevScroll < currentScroll) {
         headerNav.style = 'top: -340px';
+        goTop.style = 'bottom: -45px';
     }
     else if (currentScroll == 0) {
         headerNav.style = 'box-shadow: none';
+        goTop.style = 'bottom: -45px';
     }
     else {
         headerNav.style = 'top: 10px';
         headerNav.style = 'box-shadow: 0 0 3px 2px rgba(185, 35, 255, .2)';
+        goTop.style = 'bottom: 10px';
     }
     prevScroll = currentScroll;
 })    
