@@ -431,6 +431,7 @@ h1, h2, h3 {
   border-radius: 10px;
   padding: 20px 0;
   background-color: var(--bg-color);
+  transition: all 1s ease;
 }
 
 .header-nav__row {
