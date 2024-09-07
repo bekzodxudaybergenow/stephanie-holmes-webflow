@@ -1,0 +1,21 @@
+.go-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 10px;
+    bottom: -45px;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+    border-radius: 10px;
+    box-shadow: rgba(185, 35, 255, 0.2) 0px 0px 3px 2px;
+    background-color: var(--bg-color);
+    transition: all .5s ease;
+    
+    & img {
+        width: 18px;
+        height: 18px;
+        rotate: -45deg;
+    }
+}
