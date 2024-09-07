@@ -4,6 +4,7 @@ let sidebarInner = document.querySelector('.sidebar-inner');
 let sidebarShade = document.querySelector('.sidebar-shade');
 let sidebarList = document.querySelector('.sidebar-list');
 let sidebarClosebtn = document.querySelector('.sidebar-closebtn');
+let headerNav = document.querySelector('.header-nav');
 
 
 
@@ -26,3 +27,24 @@ sidebarClosebtn.addEventListener('click', () => {
     sidebarList.style.transform = 'translatex(-200px)';
     sidebarClosebtn.style.transform = 'translateX(-250px)';
 })
+
+
+let prevScroll = window.scrollY;
+
+window.addEventListener('scroll', () => {
+    let currentScroll = window.scrollY;
+
+    if (prevScroll < currentScroll) {
+        headerNav.style = 'top: -340px';
+    }
+    else if (currentScroll == 0) {
+        headerNav.style = 'box-shadow: none';
+    }
+    else {
+        headerNav.style = 'top: 10px';
+        headerNav.style = 'box-shadow: 0 0 3px 2px rgba(185, 35, 255, .2)';
+    }
+    prevScroll = currentScroll;
+})    
+
+console.log(prevScroll);
