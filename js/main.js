@@ -37,18 +37,16 @@ window.addEventListener('scroll', () => {
 
     if (prevScroll < currentScroll) {
         headerNav.style = 'top: -340px';
-        goTop.style = 'bottom: -45px';
+        goTop.style = 'bottom: -60px';
     }
     else if (currentScroll == 0) {
         headerNav.style = 'box-shadow: none';
-        goTop.style = 'bottom: -45px';
+        goTop.style = 'bottom: -60px';
     }
     else {
         headerNav.style = 'top: 10px';
         headerNav.style = 'box-shadow: 0 0 3px 2px rgba(185, 35, 255, .2)';
-        goTop.style = 'bottom: 10px';
+        goTop.style = 'bottom: 35px';
     }
     prevScroll = currentScroll;
 })    
-
-console.log(prevScroll);
