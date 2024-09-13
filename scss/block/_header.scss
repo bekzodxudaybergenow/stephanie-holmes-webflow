@@ -14,6 +14,7 @@
     padding: 20px 0;
     background-color: var(--bg-color);
     transition: all 1s ease;  
+    z-index: 200;
 }
 .header-nav__row {
     display: flex;
@@ -43,6 +44,7 @@
     transform: translateX(-200px);
     z-index: 100;
     transition: all .8s ease;
+    z-index: 1001;
 }
 .sidebar-list__item {
     & + * {
@@ -110,7 +112,7 @@
     width: 42px;
     height: 42px;
     transform: translateX(-250px);
-    z-index: 101;
+    z-index: 1001;
     background: linear-gradient(#1E0044, #1E0044) padding-box,
     linear-gradient(to left, #B923FF, #8338EC) border-box;
     border: 1px solid transparent;
@@ -133,18 +135,17 @@
     border-radius: 10px;
     background-color: var(--bg-color);
     box-shadow: 0 0 8px 5px rgba(131, 56, 236, .4);
-    z-index: 2;
+    z-index: 1000;
     transform: translateX(-260px);
     transition: all .6s ease;
 }
 .sidebar-shade {
-    // display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 999;
     background-color: rgba(0, 0, 0, .8);
 }
 // Header Hero
@@ -181,10 +182,31 @@
     text-decoration: none;
     color: var(--light-color);
 }
+.hero-down-btn {
+    display: none;
+}
 
 @media screen and (min-width: 375px) {
     .hero-content__desc {
         max-width: 340px;
+    }
+}
+@media screen and (min-width: 425px) {
+    .hero {
+        padding: 140px 0 40px;
+    }
+    .hero-content__title {
+        font-size: 38px;
+    }
+}
+@media screen and (min-width: 768px) {
+
+     .hero-content__title {
+        font-size: 60px;
+
+        & span {
+            font-weight: 500;
+        }
     }
 }
 @media screen and (min-width: 1024px) {
@@ -199,7 +221,7 @@
         display: block;
     }
     .header-nav__list {
-        column-gap: 30px;
+        column-gap: 40px;
     }
     .header-nav__item--link {
         display: flex;
@@ -221,6 +243,50 @@
             & svg path {
                 stroke: #B923FF;
             }
+        }
+        &:active {
+            color: #8338EC;
+            
+            & svg path {
+                stroke: #8338EC;
+            }
+        }
+    }
+    .hero {
+        padding: 180px 0 60px;
+
+        & .container {
+            position: relative;
+        }
+    }
+    .hero__link {
+        transition: color .3s ease;
+
+        &:hover {
+            color: #B923FF;;
+        }
+        &:active {
+            color: #8338EC;
+        }
+    }
+    .hero-down-btn {
+        display: block;
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        transition: opacity .3s ease;
+
+        &:hover {
+            opacity: .8;
+        }
+        &:active {
+            opacity: 1;
+        }
+        
+        & img {
+            display: block;
+            width: 90px;
+            height: 90px;
         }
     }
 }
