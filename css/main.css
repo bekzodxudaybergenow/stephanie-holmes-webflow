@@ -378,6 +378,18 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
 ul {
   list-style: none;
 }
@@ -397,10 +409,17 @@ ul {
   border-radius: 50em;
   border: 1px solid transparent;
   box-shadow: 0 0 10px 5px rgba(233, 222, 255, 0.1);
+  transition: all 0.6s ease;
 }
 .btn img {
   width: 12px;
   height: 12px;
+}
+.btn:hover {
+  background: #B923FF;
+}
+.btn:active {
+  background: #8338EC;
 }
 
 h1, h2, h3 {

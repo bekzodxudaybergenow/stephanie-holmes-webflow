@@ -9,11 +9,22 @@ body {
     font-family: var(--main-font);
     background-color: var(--main-color);
 }
-
 .container {
     max-width: 1350px;
     padding: 0 15px;
     margin: 0 auto
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1150px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1350px;
+        padding: 0 15px;
+        margin: 0 auto
+    }
 }
 ul {
     list-style: none;
@@ -34,11 +45,18 @@ ul {
     border-radius: 50em;
     border: 1px solid transparent;
     box-shadow: 0 0 10px 5px rgba(233, 222, 255, .1);
+    transition: all .6s ease;
 
     & img {
         width: 12px;
         height: 12px;
     };
+    &:hover {
+        background: #B923FF;
+    }
+    &:active {
+        background: #8338EC;
+    }
 }
 h1, h2, h3 {
     margin: 0;
