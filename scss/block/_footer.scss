@@ -18,4 +18,10 @@
         height: 18px;
         rotate: -45deg;
     }
+    &:hover {
+        background-color: #B923FF;
+    }
+    &:active {
+        background-color: #8338EC;
+    }
 }

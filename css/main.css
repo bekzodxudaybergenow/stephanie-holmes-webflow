@@ -750,3 +750,6 @@ h1, h2, h3 {
 .go-top:hover {
   background-color: #B923FF;
 }
+.go-top:active {
+  background-color: #8338EC;
+}
