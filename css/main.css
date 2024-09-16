@@ -422,6 +422,26 @@ ul {
   background: #8338EC;
 }
 
+.btn2 {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.btn2:hover {
+  background-color: #1E0044;
+  border: 1px solid #1E0044;
+}
+.btn2:active {
+  background-color: #8338EC;
+  border: 1px solid #8338EC;
+}
+
 h1, h2, h3 {
   margin: 0;
 }
