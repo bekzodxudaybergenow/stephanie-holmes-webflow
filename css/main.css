@@ -847,6 +847,9 @@ h1, h2, h3 {
   .service-art {
     padding: 36px 0 36px 36px;
   }
+  .service-develop--desc {
+    line-height: 22px;
+  }
 }
 .study {
   background-image: url("/images/study/bg.png");
