@@ -739,6 +739,9 @@ h1, h2, h3 {
   .hero__link:active {
     color: #8338EC;
   }
+  .hero-content__desc {
+    line-height: 22px;
+  }
   .hero-down-btn {
     display: block;
     position: absolute;
