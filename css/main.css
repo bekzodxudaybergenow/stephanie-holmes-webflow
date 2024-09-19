@@ -948,6 +948,117 @@ h1, h2, h3 {
     line-height: 22px;
   }
 }
+.winner {
+  display: inline-block;
+  width: 100%;
+  background-image: url("/images/winner/winner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 20px 0;
+  color: var(--light-color);
+  position: relative;
+}
+
+.winner-content {
+  margin-bottom: 20px;
+}
+
+.winner-content--subtitle {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.winner-content--title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.winner-content__btns {
+  margin-bottom: 100px;
+}
+
+.winner-content--btn {
+  border-color: var(--light-color);
+  color: var(--light-color);
+}
+.winner-content--btn:hover {
+  background-color: #B923FF;
+  border-color: #B923FF;
+}
+
+.winner-content--link {
+  font-weight: 500;
+  max-width: 180px;
+  border: 1px solid #B923FF;
+  box-shadow: 0 0 10px 1px rgba(185, 35, 255, 0.3);
+  background: transparent;
+  color: var(--light-color);
+}
+
+.winner-content--desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.winner-content__mark {
+  display: none;
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.winner-images img {
+  border-radius: 20px;
+  display: block;
+  max-width: 660px;
+}
+
+@media screen and (min-width: 1024px) {
+  .winner-row {
+    display: flex;
+    column-gap: 180px;
+  }
+  .winner-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0;
+  }
+  .winner-content__btns {
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: auto;
+  }
+  .winner-images img {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .winner {
+    padding: 40px 0;
+  }
+  .winner-row {
+    justify-content: space-between;
+  }
+  .winner-content--title {
+    font-size: 50px;
+  }
+  .winner-content--desc {
+    line-height: 22px;
+  }
+  .winner-content__mark {
+    display: block;
+  }
+}
 .go-top {
   display: flex;
   align-items: center;
