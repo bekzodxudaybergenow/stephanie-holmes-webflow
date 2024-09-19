@@ -371,6 +371,7 @@ body {
   font-family: var(--main-font);
   background-color: var(--main-color);
   color: var(--main-color);
+  margin: 0 10px;
 }
 
 .container {
