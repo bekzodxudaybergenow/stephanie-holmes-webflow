@@ -1059,6 +1059,64 @@ h1, h2, h3 {
     display: block;
   }
 }
+.awards {
+  background-color: var(--light-color);
+  border-radius: 10px;
+  color: var(--main-color);
+  padding: 20px 0;
+}
+
+.awards-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.awards-content--title {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.awards-list {
+  border-top: 1px solid #9585ae;
+  border-top: 1px solid #9585ae;
+}
+
+.award-list--item {
+  cursor: pointer;
+}
+.award-list--item + * {
+  border-top: 1px solid #9585ae;
+}
+
+.awards-item__question {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.awards-item__content h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 2px;
+}
+.awards-item__content p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.awards-question--img {
+  width: 26px;
+  height: 26px;
+}
+
+.awards-item__answer {
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 12px;
+}
+
 .go-top {
   display: flex;
   align-items: center;
