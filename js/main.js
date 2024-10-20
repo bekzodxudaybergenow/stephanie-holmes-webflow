@@ -6,7 +6,8 @@ let sidebarList = document.querySelector('.sidebar-list');
 let sidebarClosebtn = document.querySelector('.sidebar-closebtn');
 let headerNav = document.querySelector('.header-nav');
 let goTop = document.querySelector('.go-top');
-
+let awardsItem = document.querySelectorAll('.award-list--item');
+let awardsAnswer = document.querySelector('.awards-item__answer');
 
 
 
@@ -50,3 +51,9 @@ window.addEventListener('scroll', () => {
     }
     prevScroll = currentScroll;
 })    
+
+awardsItem.forEach((item) => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('active');
+    })
+})
