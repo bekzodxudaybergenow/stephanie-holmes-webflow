@@ -1243,6 +1243,11 @@ h1, h2, h3 {
   row-gap: 8px;
 }
 
+.footer-list__item {
+  display: inline-block;
+  width: 85px;
+}
+
 .footer-list__item--link {
   display: flex;
   column-gap: 10px;
@@ -1297,6 +1302,18 @@ h1, h2, h3 {
 .footer-bottom p {
   font-size: 12px;
 }
+.footer-bottom a {
+  font-size: 12px;
+  color: var(--light-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-bottom a:hover {
+  color: #B923FF;
+}
+.footer-bottom a:active {
+  color: #8338EC;
+}
 
 @media screen and (min-width: 375px) {
   .footer-bottom {
@@ -1332,5 +1349,15 @@ h1, h2, h3 {
   .footer-main--title {
     font-size: 70px;
     margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-main {
+    margin: 130px 0 80px;
+  }
+  .footer-main--title {
+    font-size: 90px;
+    max-width: 920px;
+    margin: 0 auto 40px;
   }
 }
